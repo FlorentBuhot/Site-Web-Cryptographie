@@ -1,0 +1,127 @@
+@media screen and (max-width: 1500px) {
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+
+    .front, .back {
+        width: 27%;
+        margin: 0 3%;
+    }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+    .card-container {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .front, .back {
+        width: 40%;
+        margin: 0 5%;
+    }
+}
+
+@media screen and (max-width: 1050px) {
+    header, .centrale, .nav_links {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;
+    }
+
+    .sous {
+        width: 100%;
+        left: -5px;
+    }
+
+    header {
+        box-shadow: none;
+    }
+
+    .nav_links li .profile {
+        padding: 0 2%;
+    }
+
+    .nav_links {
+        margin: 0 0 0 40%;
+    }
+
+    nav {
+        display: none;
+        box-shadow: 10px 10px 10px gold;
+    }
+
+    .centrale {
+        margin: 0;
+    }
+
+    .menu-adapt {
+        opacity: 1;
+    }
+
+    #blocnote_button {
+        display: none;
+    }
+
+    #cont_blocnote {
+        opacity: 0;
+    }
+
+    #cont_blocnote * {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    #blocnote_button {
+        display: inline;
+    }
+
+    .menu{
+        left:2%;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .card-container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .front, .back {
+        width: 100%;
+    }
+
+    .fenetre-rejouer .annonce_fail{
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+ 
+    .back p {
+        font-size: 13px;
+    }
+
+    .front h2 {
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .nav_links {
+        margin: 0;
+    }
+
+    .star-container3 {
+        margin: -30px 0 100px 15%;
+    }
+}
+
+.active {
+    display: inline;
+}

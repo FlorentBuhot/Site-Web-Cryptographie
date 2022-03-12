@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Substitution</title>
+
+</head>
+<body>
+    <h1>Substitution: Niveau 2</h1>
+    <h2 align="justify">Dans cette &eacute;nigme vous &ecirc;tes un professeur. Durant les cours vous avez vu que les &eacute;l&egrave;ves s'&eacute;changer des mots crypt&eacute;. Vous arrivez &agrave; les r&eacute;cup&eacute;rer mais ne pouvez pas les comprendre, Cependant vous avez r&eacute;ussi &agrave; trouve un message non chiffr&eacute; et vous pensez que il peux vous aider &agrave; comprendre le reste des message qu'ils s'envoient</h2>
+    <h2 style="text-align: center">
+        <i>Soit le message non chiffr&eacute; que vous avez r&eacute;cup&eacute;rer:</i>
+    </h2>
+    <div align="center" style="padding-top:10px;padding-left: 25%; padding-right:25% ; ">
+        <div>
+            <h4 id="msgNC" style="border: 3px solid; margin: 10px;">
+                <p id="dateNC" style="text-align: right"></p>
+                Aux initi&eacute;s,
+                <br />Je me suis rendue compte que quelque chose dans la classe n'allez pas:
+                <br />Depuis des jours des comportement bizarres sont apparus pendant les r&eacute;cr&eacute;ations.
+                <br />Nous faisons donc des supopositions sur qui peux &ecirc;tre &agrave; l'origine de &ccedil;a
+                <br />
+                <br />post-scriptum : Voyez ce koala fou qui mange des journaux et des photos dans un bungalow.
+                <br />
+                <p></p>
+            </h4>
+        </div>
+    </div>
+    <div align="center" style=" padding-top:10px;padding-left: 25%; padding-right:25% ; ">
+        <h4 id="msgNC" style="border: 3px solid;">
+            <p id="dateC" style="text-align : right"></p>
+            <p id="msgC">msg 1</p>
+        </h4>
+    </div>
+    <h2>saurez-vous trouver le message secret: </h2>
+    <script src="../js/niveau2.js">
+    </script>
+    <form style="text-align: initial" name="reponse">
+        <h3>r&eacute;ponse:</h3><textarea name="box"></textarea>
+        <input type="button" value="valider" onclick="controle()" /> <input type="reset" value="supprimer" />
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta id="viewport" content="width=device-width, initial-scale=1">
+    <title>ADFGVX</title>
+</head>
+
+<body>
+<h1> Enigme <nobr id="titre"></nobr></h1>
+<p>Difficulté :</p>
+<label for="choix"></label>
+<select id="choix">
+    <option value="1">Niveau 1</option>
+    <option value="2">Niveau 2</option>
+    <option value="3">Niveau 3</option>
+</select>
+
+<p id="ennonce"></p>
+
+<div style="border: black solid 1px; padding: 20px; margin: 20px;">
+    <p id="intro"></p>
+    <p id="aqdd"></p>
+    <p id="citation"></p>
+    <p id="signe"></p>
+    <p id="outro"></p>
+</div>
+
+<div style="border: black solid 1px; padding: 20px; margin: 20px;">
+    <p id="introChiffre"></p>
+    <p id="aqddChifffre"></p>
+    <p id="messageChiffre"></p>
+    <p id="signeChiffre"></p>
+    <p id="outroChiffre"></p>
+</div>
+
+
+<form name=reponse>
+    <label>
+        <input name="box" size="100" />
+    </label>
+    <input id="button" type="button" onclick="solution(reponse)" value="valider" />
+</form>
+<script src="js/ADFGVX.js"></script>
+</body>
+
+</html>

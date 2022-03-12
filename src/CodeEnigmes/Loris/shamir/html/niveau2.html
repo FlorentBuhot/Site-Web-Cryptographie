@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <title>Shamir</title>
+
+    </head>
+    <body>
+        <h1>Shamir: Niveau 2</h1>
+        <h2>En 1979, le cryptographe isra&eacute;lien Adi Shamir a inventé une technique &eacute;l&eacute;gante pour qu'un nombre secret ne soit accessible que si au moins k personnes collaborent. Cette technique s'apelle le <i>partage de secret</i>.</h2>
+        <h2>Pour illustrer le fonctionnement de cette méthode avec k=3.il suffit que chacune des personnes impliqu&eacute;es reçoivent les coordonnées(x,y) d'un point du plant, différent pour chacun.Ces points ne sont pas choisis au hasard: ils appartient tous &aacute; une certaine coube dont l'&eacute;quation est de la forme:</h2>
+        <h2 style="text-align:center"><i> y =ax² + bx + s</i></h2>
+        <h2> les param&egrave;tres <i>a, b</i> et <i>s</i> ne sont pas donn&eacute;s, et le nombre secret est s, le terme constant de l'&eacute;quation de cette courbe.</h2>
+        <h2>Soit Alice, Bobby et Carol qui ont respectivement les points :</h2>
+        <h2 id="A">A</h2>
+        <h2 id="B">B</h2>
+        <h2 id="C">C</h2>
+        <script src="../js/niveau2.js">
+        </script>
+
+        <h2><b>Enigme:</b> saurez vous d&eacute;couvrir le nombre secret <i>s</i>?</h2>
+
+        <form name="reponse">
+            <textarea name="box"></textarea>
+            <input type="button" value="valider" onclick="controle(reponse)" /> <input type="reset" value="supprimer" />
+        </form>
+    </body>
+
+</html>

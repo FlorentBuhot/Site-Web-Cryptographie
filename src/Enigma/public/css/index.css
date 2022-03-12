@@ -1,0 +1,131 @@
+.main_box {
+    background-color: white;
+    color: black;
+    margin: 10px 60px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px grey;
+    border-radius: 20px;
+}
+
+.home-section p {
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 20%;
+}
+
+.rep_box {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    padding-bottom: 60px;
+    margin-bottom: 4%;
+    box-shadow: 10px 10px 20px grey;
+    margin: 20px 60px;
+    border-radius: 20px;
+}
+
+.main_top {
+    display: flex;
+}
+
+.main_top select {
+    position: absolute;
+    top: 130px;
+    left: 70%;
+    padding: 10px 20px;
+}
+
+
+.btn-grad {
+    background-color: #7B68EE;
+    color: white;
+    margin-right: -5px;
+    border: none;
+    padding: 10px 20px;
+}
+
+.section_box .btn-grad:hover {
+    background-color: white;
+    color: #7B68EE;
+}
+
+.section_box .btn-grad:first-child {
+    border-radius: 20px 0 0 0;
+}
+
+.section_box .btn-grad:last-child {
+    border-radius: 0 0 20px 0;
+}
+
+.rep_box #questionRep {
+    text-align: center;
+}
+
+.rep_box textarea {
+    width: 80%;
+    position: relative;
+    left: 10%;
+    resize: none;
+}
+
+.btn_zone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_zone input {
+    margin: 10px 20px 0 20px;
+    padding: 10px 20px;
+}
+
+.home-section .element_section {
+    margin: 100px 200px;
+    background-color: white;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    box-shadow: 10px 10px 20px #7B68EE;
+}
+
+.main_top #choix {
+    position: absolute;
+    top: 13%;
+    left: 80%;
+}
+
+#cont_eni h2, #cont_ind h2 {
+    text-align: center;
+    position: relative;
+    top: -30px;
+}
+
+#cont_ind .btn-grad {
+    margin: 30px 40%;
+}
+
+@media only screen and (max-width: 1400px) {
+    .main_top #choix {
+        left: 76%;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .home-section .element_section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .main_top #choix {
+        left: 72%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    #cont_eni #titre {
+        top: 0;
+    }
+
+    .main_top #choix {
+        position: static;
+    }
+}

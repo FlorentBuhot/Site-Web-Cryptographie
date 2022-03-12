@@ -1,0 +1,134 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 240px;
+    background: #11101d;
+    padding: 6px 14px;
+}
+
+    .sidebar .logo_content .logo {
+        color: white;
+        display: flex;
+        height: 50px;
+        width: 100%;
+        align-items: center;
+    }
+
+.logo_content .logo i {
+    font-size: 50px;
+    margin-right: 5px;
+}
+
+.logo_content .logo .logo_name {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.sidebar ul {
+    margin-top: 20px;
+}
+
+    .sidebar ul li {
+        position: relative;
+        height: 50px;
+        width: 100%;
+        margin: 0 5px;
+        list-style: none;
+        line-height: 50px;
+    }
+
+        .sidebar ul li a {
+            color: white;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            border-radius: 12px;
+        }
+
+            .sidebar ul li a:hover {
+                color: #11101d;
+                background: white;
+            }
+
+            .sidebar ul li a i {
+                height: 50px;
+                min-width: 50px;
+                border-radius: 12px;
+                line-height: 50px;
+                text-align: center;
+            }
+
+.home-section {
+    position: relative;
+    height: 100vh;
+    left: 260px;
+    transition: all 0.5s ease;
+    overflow-y: scroll;
+}
+
+.main_box {
+    background-color: white;
+    color: black;
+    top: 0;
+    margin-right: 18%;
+    padding: 20px;
+    border: solid 3px #11101d;
+}
+
+.home-section h2 {
+    text-align: left;
+    padding: 20px;
+}
+
+.home-section p {
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+.home-section .section_box {
+    margin-top: 6%;
+    margin-right: 86%;
+}
+
+.section_box a {
+    background: white;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    padding: 30px;
+    border: solid 3px #11101d;
+    padding-top: 0px;
+    padding-right: 35px;
+    padding-bottom: 0px;
+}
+
+.rep_box {
+    background-color: white;
+    color: black;
+    margin-top: 5%;
+    margin-right: 18%;
+    padding: 20px;
+    padding-bottom: 60px;
+    margin-bottom: 4%;
+    border: solid 3px #11101d;
+}

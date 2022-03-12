@@ -1,0 +1,14 @@
+Shamir:
+
+y = ax+b
+y = ax² + bx+ s
+y = ax^3 + bx² + cx + s
+
+substitution:
+
+césar : décallage de 3
+random : décallage entre [2;24] de chaque lettre (fait)
+random compelt: bijection entre 2 lettre ex a-> z ; b-> f; c-> q
+
+ajouter Date, lieu, et PS trouver pangrame
+changer aléatoirement Date,lieu et PS(si faisable)

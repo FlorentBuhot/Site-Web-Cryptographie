@@ -1,0 +1,4 @@
+<?php
+
+?>
+<h1><?php echo $foo; ?></h1>

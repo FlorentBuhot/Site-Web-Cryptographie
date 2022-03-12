@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="sidebar">
+
+        <div class="logo_content">
+
+            <div class="logo">
+                <i class='bx bxl-javascript'></i>
+                <div class="logo_name">Enigma</div>
+            </div>
+
+        </div>
+
+        <ul class="nav_list">
+
+            <li>
+                <a href="#">
+                    <i class='bx bx-grid-alt'></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bxs-book-content'></i>
+                    <span class="links_name">Liste des enigmes</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class='bx bxs-bar-chart-alt-2'></i>
+                    <span class="links_name">Leader board</span>
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+    <div class="home-section">
+
+        <div class="section_box">
+
+            <a href="#" style="background: #11101d; color: white;">Enigme</a>
+            <a href="indice.html">Indices</a>
+
+        </div>
+
+        <div class="main_box">
+
+            <h1>Shamir: Niveau 1</h1>
+            <h2>En 1979, le cryptographe isra&eacute;lien Adi Shamir a inventé une technique &eacute;l&eacute;gante pour qu'un nombre secret ne soit accessible que si au moins k personnes collaborent. Cette technique s'apelle le <i>partage de secret</i>.</h2>
+            <h2>Pour illustrer le fonctionnement de cette méthode avec k=2.il suffit que chacune des personnes impliqu&eacute;es reçoivent les coordonnées(x,y) d'un point du plant, différent pour chacun.Ces points ne sont pas choisis au hasard: ils appartient tous &aacute; une certaine coube dont l'&eacute;quation est de la forme:</h2>
+            <h2 style="text-align:center"><i> y =ax + s</i></h2>
+            <h2> les param&egrave;tres <i>a </i> et <i>s</i> ne sont pas donn&eacute;s, et le nombre secret est s, le terme constant de l'&eacute;quation de cette courbe.</h2>
+            <h2>Soit Alice et Bobby qui ont respectivement les points :</h2>
+            <h2 id="A">A</h2>
+            <h2 id="B">B</h2>
+            <script src="../js/niveau1.js">
+            </script>
+
+        </div>
+
+        <div class="rep_box">
+
+            <h2><b>Enigme:</b> saurez vous d&eacute;couvrir le nombre secret <i>s</i>?</h2>
+
+        <form name="reponse">
+            <input type="text" width="100%" name="box"></input>
+            <input type="button" value="valider" onclick="controle(reponse)" /> <input type="reset" value="supprimer" />
+        </form> </div>
+
+    </div>
+
+</body>
+
+</html>
+
+<!--
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <link rel="stylesheet" href="../css/style.css"/>
+        <title>Shamir</title>
+
+    </head>
+    <body>
+        <h1>Shamir: Niveau 1</h1>
+        <h2>En 1979, le cryptographe isra&eacute;lien Adi Shamir a inventé une technique &eacute;l&eacute;gante pour qu'un nombre secret ne soit accessible que si au moins k personnes collaborent. Cette technique s'apelle le <i>partage de secret</i>.</h2>
+        <h2>Pour illustrer le fonctionnement de cette méthode avec k=2.il suffit que chacune des personnes impliqu&eacute;es reçoivent les coordonnées(x,y) d'un point du plant, différent pour chacun.Ces points ne sont pas choisis au hasard: ils appartient tous &aacute; une certaine coube dont l'&eacute;quation est de la forme:</h2>
+        <h2 style="text-align:center"><i> y =ax + s</i></h2>
+        <h2> les param&egrave;tres <i>a, b</i> et <i>s</i> ne sont pas donn&eacute;s, et le nombre secret est s, le terme constant de l'&eacute;quation de cette courbe.</h2>
+        <h2>Soit Alice, Bobby et Carol qui ont respectivement les points :</h2>
+        <h2 id="A">A</h2>
+        <h2 id="B">B</h2>
+        <script src="../js/niveau1.js">
+        </script>
+
+        <h2><b>Enigme:</b> saurez vous d&eacute;couvrir le nombre secret <i>s</i>?</h2>
+
+        <form name="reponse">
+            <textarea name="box"></textarea>
+            <input type="button" value="valider" onclick="controle(reponse)" /> <input type="reset" value="supprimer" />
+        </form>
+    </body>
+
+</html>
+
+    -->

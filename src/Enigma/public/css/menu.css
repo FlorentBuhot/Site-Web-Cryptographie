@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    font-family: "Montserrat", sans-serif;
+}
+
+li, a, button {
+    font-weight: 500;
+    font-size: 20px;
+    color: #edf0f1;
+    text-decoration: none;
+    user-select: none;
+}
+
+header {
+    top: 0;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    box-shadow: -3px 5px 10px gold;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    height: 100px;
+}
+
+/*Partie gauche */
+
+.logo {
+    cursor: pointer;
+    color: white;
+    width: 20%;
+    margin: 30px 0 10px 10%;
+    font-weight: bold;
+    user-select: none;
+}
+
+/* Partie principale gestion des onglets */
+.nav_links {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    width: 100%;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 30px 0;
+}
+
+.nav_links li a {
+    transition: none;
+    margin-left: 4px;
+    padding: 10px 20px;
+    border-radius: 15px;
+}
+
+.nav_links li a i {
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.nav_links li a:hover {
+    background-color: white;
+    color: black;
+    transition: all 1s ease-out;
+}
+
+/*
+.nav_links li .leaderboard {
+    border-radius: 15px 15px 0px 0px;
+    cursor: pointer;
+}
+*/
+
+.nav_links li .profile {
+    border-radius: 15px 15px 0 0;
+    cursor: pointer;
+    padding: 5% 10%;
+    font-size: 20px;
+}
+
+.nav_links li .profile:hover {
+    background-color: transparent;
+    color: gold;
+    transition: none;
+}
+
+/* Partie sous menu compte */
+.sous {
+    display: none;
+    background-color: transparent;
+    position: absolute;
+    margin-left: 4.5px;
+    width: 202px;
+    z-index: 10;
+}
+
+nav > ul li:hover .sous {
+    display: flex;
+    flex-direction: column;
+}
+
+.sous li {
+    float: none;
+    text-align: left;
+    background-color: #24252A;
+    padding: 10px 5px;
+    width: 100%;
+    border-left: 3px solid gold ;
+}
+
+.sous i {
+    opacity: 0;
+    transform: translateX(-20px);
+    color: black;
+    background-color: transparent;
+}
+
+.sous li:first-child {
+    z-index: 20;
+}
+
+.sous .last {
+    border-radius: 0 0 15px 15px;
+}
+
+.sous a {
+    border-bottom: none;
+    background-color: #24252A;
+    color: white;
+    font-size: 12px;
+}
+
+
+.sous li:hover, .sous li:hover a, .sous li:hover:first-child {
+    background: white;
+    color: black;
+    border-radius: 0;
+    transition: all 1s;
+}
+
+.sous li:hover, .sous li:hover a, .sous li:hover:last-child {
+    background: white;
+    color: black;
+    transition: all 1s;
+}
+
+.sous .last:hover {
+    border-radius: 0 0 15px 15px;
+}
+
+.sous li:hover, .sous li:hover i {
+    opacity: 1;
+    transition: all 1s;
+}
+
+.sous li:hover i {
+    transform: translateX(0px);
+    transition: all 1s;
+}
+
+.compte .sous a:last-child {
+    font-size: 12px;
+}
+
+.n2h {
+    position: fixed;
+    top: 0;
+}
+
+.n2f {
+    position: relative;
+    bottom: 0;
+}
+
+.centrale {
+    margin-left: 27%;
+    margin-top: 10px;
+}
+
+.gestionUtiTexte a {
+    font-size: 10px;
+}
+
+.gestionUtiTexte a i {
+    font-size: 15px;
+}
+
+.affErreur {
+    position: relative;
+    margin: 0 30%;
+    background-color: rgba(255, 20, 20, 0.5);
+    width: 40%;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.affErreur p, .affSuccess p {
+    padding: 40px 0;
+}
+
+.affErreur *, .affSuccess * {
+    background-color: transparent;
+}
+
+.affSuccess {
+    position: relative;
+    margin: 0 30%;
+    background-color: rgba(5, 250, 20, 0.3);
+    width: 40%;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.erreur {
+    color: white;
+    font-weight: 600;
+    background-color: rgba(255, 20, 20, 0.3);
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    margin: 0 0;
+
+}
+
+.success {
+    color: white;
+    font-weight: 600;
+    background-color: rgba(5, 250, 20, 0.3);
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    margin: 0 0;
+}
+
+.menu-adapt {
+    opacity: 0;
+}
+
+#deroulant {
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    font-size: 40px;
+    color: white;
+    border: none;
+}
+
+header button {
+    background-color: transparent;
+}
+
+.img-profil {
+    height: 35px;
+    width: 35px;
+    position: relative;
+    top: 10px;
+    border-radius: 50%;
+}
+
+.img {
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.last-li{
+}

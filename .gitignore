@@ -1,0 +1,6 @@
+src/Enigma/base/base.sqlite
+src/Enigma/.idea/*
+src/Enigma/.vscode/*
+.idea/*
+.vscode/*
+*.sqlite

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta id="viewport" content="width=device-width, initial-scale=1">
+  <title>Vous avez dit sur sur ..</title>
+  <style type="enigme.css"></style>
+</head>
+<body>
+  <h1>Déchiffrement</h1>
+  <p>Difficulté :</p>
+  <select id="niveau">
+    <option id="facile">Facile</option>
+    <option id="moyen">Moyen</option>
+    <option id="difficile">Difficile</option>
+  </select>
+  <p>Alice Chiffre le message M et envoie le résultat à Bob qui reçoit :
+    <span style="font-weight: 1000;" id="MA"></span>
+    <br>Bob ne peut pas déchiffrer ce message donc il chiffre le message reçu et renvoi :
+    <span style="font-weight: 1000;" id="MB"></span>
+    <br>Alice déchiffre à son tour le message et renvoi à Bob le nombre :
+    <span style="font-weight: 1000;" id="RA"></span>
+  </p>
+
+  <h2>Quel est le message M d'Alice ?</h2>
+
+  <form name=reponse>
+    <input name="box"/>
+    <input id="button" type="button" onclick="validation(reponse)" value="valider"/>
+  </form>
+  <script src="enigme.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta id="viewport" content="width=device-width, initial-scale=1">
+  <title>Méli-mélo de caractères</title>
+  <link href="css/index.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>Méli-mélo de caractères</h1>
+  <p>Difficulté :</p>
+  <select id="choix">
+    <option value="1">Niveau 1</option>
+    <option value="2">Niveau 2</option>
+    <option value="3">Niveau 3</option>
+  </select>
+
+  <div class="para">
+    <p id="date"></p>
+    <p id="msg"></p>
+    <p id="secret"></p>
+    <p id="sign"></p>
+  </div>
+
+  <form name=reponse>
+    <input name="box" />
+    <input id="button" type="button" onclick="solution()" value="valider" />
+  </form>
+  <script src="js/niveau1.js"></script>
+</body>
+
+</html>

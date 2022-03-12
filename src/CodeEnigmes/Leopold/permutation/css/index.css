@@ -1,0 +1,24 @@
+body{
+    flex-direction: row;
+    position: relative;
+    width: 100%;
+}
+
+.para{
+    display: block;
+    width: 70%;
+    border:solid 2px black;
+    border-radius:10px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#msg #sign #secret{
+    word-wrap: break-word;
+    margin:5px;
+    text-align: left;
+}
+
+#date{
+    text-align: right;
+}

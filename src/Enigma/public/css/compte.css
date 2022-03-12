@@ -1,0 +1,167 @@
+main {
+    position: relative;
+    margin: 0 30%;
+    width: 40%;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+h1 {
+    color: white;
+    font-weight: 600;
+    background-color: gold;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    margin: 0 0;
+}
+
+form, input, label {
+    background-color: transparent;
+}
+
+form {
+    margin: 50px 0;
+}
+
+.element {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+}
+
+hr {
+    width: 35%;
+    margin: 0 25vh;
+}
+
+.element input, label {
+    text-align: left;
+    width: 60%;
+    margin: 10px 20%;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: white;
+}
+
+input:hover {
+    background-color: white;
+    color: black;
+    transition: all 1s;
+}
+
+input:active {
+    background-color: white;
+}
+
+.box p, a {
+    padding-bottom: 20px;
+    background-color: transparent;
+}
+
+form button {
+    background-color: gold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    margin: 20px 0;
+    color: black;
+    font-weight: bold;
+}
+
+form button:hover {
+    background-color: goldenrod;
+}
+
+main .box {
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: -3px 5px 10px gold;
+}
+
+.box a {
+    color: gold;
+}
+
+.box a:hover {
+    color: goldenrod;
+}
+
+.contentPhp {
+    margin-top: 200px;
+}
+
+.affErreur {
+    position: relative;
+    margin: 0 30%;
+    background-color: rgba(255, 20, 20, 0.5);
+    width: 40%;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.affErreur p, .affSuccess p {
+    padding: 40px 0;
+}
+
+.affErreur *, .affSuccess * {
+    background-color: transparent;
+}
+
+.affSuccess {
+    position: relative;
+    margin: 0 30%;
+    background-color: rgba(5, 250, 20, 0.3);
+    width: 40%;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
+.erreur {
+    color: white;
+    font-weight: 600;
+    background-color: rgba(255, 20, 20, 0.3);
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    margin: 0 0;
+}
+
+.success {
+    color: white;
+    font-weight: 600;
+    background-color: rgba(5, 250, 20, 0.3);
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    padding: 20px;
+    margin: 0 0;
+}
+
+@media screen and (max-width: 1400px) {
+
+    main {
+        width: 60%;
+        margin: 0 20%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    main {
+        width: 80%;
+        margin: 0 10%;
+    }
+}
+
+.box-error {
+    margin-top: 15%;
+}
